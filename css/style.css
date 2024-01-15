@@ -134,7 +134,7 @@ main img{
 .container-bio{
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left: 16px;
+    padding-left: 8px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -177,7 +177,7 @@ main img{
 }
 .main-text-proyect{
     width: 70vw;
-    padding-left: 24px;
+    padding-left: 16px;
 }
 .main-text-proyect p{
     width: 70vw;
@@ -192,7 +192,7 @@ main img{
     justify-content: space-between;
 }
 .text-proyect{
-    height: 80vh;
+    height: auto;
     padding-top: 40px;
     padding-bottom: 4px;
     width: 100%;
@@ -284,7 +284,16 @@ a:hover{
     background-color: blue;
 }
 
-@media (width < 500px){
+@media (width< 990px){
+    .main-text p{
+        padding-right: 64px;
+    }
+    .main-text-proyect p{
+        padding-right: 64px;
+    }
+}
+
+@media (width < 800px){
     .menu ul li a{
         font-size: 1em;
     }
