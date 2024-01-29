@@ -2,3 +2,4 @@ vscode/
 node_modules/
 *.map
 steps.txt
+style.css

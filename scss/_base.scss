@@ -19,6 +19,12 @@ $xlg: 3em;
 $xxlg: 4em;
 $xxxlg: 5em;
 
+@mixin flex($direc,$justy,$align){
+    display: flex;
+    flex-direction: $direc;
+    justify-content: $justy;
+    align-items: $align;
+}
 
 h1,
 h2,
@@ -82,19 +88,18 @@ p{
 }
 
 .footer{
+
+   @include flex(row,space-between ,last baseline)
+
     font-size: $lg;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: last baseline;
-    justify-content: space-between;
     padding-bottom: 4px;
     padding-right: 16px;
-    
-}
+    }
+
 a{
     &:active{
         color: $secondaryColor;

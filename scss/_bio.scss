@@ -1,12 +1,17 @@
+@mixin flex($direc,$justy,$align){
+    display: flex;
+    flex-direction: $direc;
+    justify-content: $justy;
+    align-items: $align;
+}
+
 .container-bio{
+    @include flex(row,space-between ,flex-start )
+
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 8px;
     width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
 
     h3{
         padding-bottom: $xsm;  
