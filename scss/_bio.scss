@@ -1,0 +1,35 @@
+.container-bio{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    h3{
+        padding-bottom: $xsm;  
+    }
+}
+
+.main-text{
+    width: 50vw;
+    padding-left: 24px;
+
+    p{
+        width: 50vw;
+        font-size: $lg;
+        padding-bottom: 16px;
+        padding-right: 32px;  
+    }
+
+}
+
+.small-text {
+    p{
+        padding-bottom: 24px;
+    }
+}
+
+

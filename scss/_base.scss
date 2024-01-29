@@ -2,13 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
 //vars
 $mainFont:'Space Grotesk', sans-serif;
-//wights
+//weights
 $light:300;
 $regular:400;
 $bold:600;
 //colors
 $mainColor: blue;
 $secondaryColor: white;
+//sizes
+$xxsm: 0.8em;
+$xsm: 1em;
+$sm:1.4em; 
+$md: 1.5em;
+$lg: 2em;
+$xlg: 3em;
+$xxlg: 4em;
+$xxxlg: 5em;
 
 
 h1,
@@ -20,4 +29,81 @@ ul,
 li,
 a{
     font-family: $mainFont;
+    color: $mainColor;
+    list-style: none;
+    text-decoration: none;
 }
+
+h1,
+h2,
+h3{
+    font-weight: $bold;
+}
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+    
+}
+h1{
+    font-size: $xxlg;
+    text-decoration: none;
+}
+h2{
+    font-size: $lg;
+    text-decoration: none;
+}
+h3{
+    font-size: $md;
+    text-decoration: none;
+}
+nav,
+ul,
+li,
+a{
+    color: $mainColor;
+    font-size: $lg;
+    text-transform: uppercase; 
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+}
+p{
+    font-size: $xsm;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-lighter{
+    font-weight: lighter;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.footer{
+    font-size: $lg;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    padding-right: 16px;
+    
+}
+a{
+    &:active{
+        color: $secondaryColor;
+        background-color: $mainColor;
+    }  
+    &:hover{
+        color: $secondaryColor;
+        background-color: $mainColor;
+    } 
+
+}
+    
