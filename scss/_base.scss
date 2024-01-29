@@ -89,7 +89,7 @@ p{
 
 .footer{
 
-   @include flex(row,space-between ,last baseline)
+   @include flex(row,space-between ,last baseline);
 
     font-size: $lg;
     position: fixed;

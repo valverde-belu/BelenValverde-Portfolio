@@ -10,12 +10,11 @@
     width: 100%;
 
     ul{
+        @include flex(row,space-between ,flex-start);
+
         list-style: none;
         text-decoration: none;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;   
+
     }
 
     li{

@@ -32,15 +32,13 @@
         font-size: $xlg;
     }
     .footer{
+        @include flex(column,baseline ,center);
+
         font-size: $xsm;
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: baseline;
         padding: 4px;
 
         h2{
@@ -57,15 +55,14 @@
 
     /*bio*/
     .container-bio{
+        @include flex(column,space-between ,flex-start );
+
         padding-top: 0px;
         padding-bottom: 0px;
         padding-left: 4px;
         padding-right: 4px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
+        
 
         p{
             width: 100vw;
@@ -102,11 +99,9 @@
     
     /* list*/
     .item-proyect-list{
+        @include flex(column,space-between ,baseline);
+
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        justify-content: space-between;
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 4px;
@@ -170,6 +165,8 @@
     }
 
     .text-proyect{
+        @include flex(column,space-between ,flex-start);
+
         height: auto;
         width: 100vw;
         padding-top: 20px;
@@ -177,10 +174,6 @@
         padding-left: 8px;
         padding-right: 4px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
     }
 
     .gallery{
