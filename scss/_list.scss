@@ -1,0 +1,33 @@
+.container-proyect-list{
+    @include flex(column,space-between ,flex-start);
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100vh;
+}
+
+.item-proyect-list{
+    @include flex(row,space-between ,center);
+
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 4px; 
+    border-bottom: 2px solid $mainColor;
+    border-color: $mainColor;
+
+    img{
+        width: 4%;  
+    }
+
+    h2{
+        font-weight: bold;
+        &:hover{
+            color: $secondaryColor;
+            background-color: $mainColor;
+        }
+    }
+
+}

@@ -1,0 +1,246 @@
+@media (width< 990px){
+    
+    /* bio*/
+    .main-text{
+        p{
+            padding-right: 64px;
+        }
+    }
+    
+    /*Projects*/
+    .main-text-proyect {
+        p{
+            padding-right: 64px;
+        }
+    }
+    
+}
+
+@media (width < 800px){
+    
+    /*nav*/
+    .menu{
+        ul,
+        li,
+        a{
+            font-size: $xsm;
+        }
+    } 
+    
+    /* Base*/
+    h1{
+        font-size: $xlg;
+    }
+    .footer{
+        @include flex(column,baseline ,center);
+
+        font-size: $xsm;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        padding: 4px;
+
+        h2{
+            font-size: $md;
+        }
+
+        ul,
+        li,
+        a{
+            display: none; 
+        }
+    }
+    
+
+    /*bio*/
+    .container-bio{
+        @include flex(column,space-between ,flex-start );
+
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 4px;
+        padding-right: 4px;
+        width: 100%;
+        
+
+        p{
+            width: 100vw;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 16px; 
+        }
+
+        h3{
+            padding-bottom: 8px;
+        }
+
+        img{
+            width: 100vw;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 16px; 
+        }
+    }  
+  
+    .main-text{
+        width: 100vw;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        p{
+            width: 100vw;
+            font-size: $sm;
+            padding-bottom: 16px;
+            padding-right: 4px;
+        }
+    
+    }
+    
+    /* list*/
+    .item-proyect-list{
+        @include flex(column,space-between ,baseline);
+
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 4px; 
+        border-bottom: 2px solid blue;
+        border-color: blue;
+
+        img{
+            display: none;
+            width: 4%;
+        }
+
+        h2{
+            font-size: $md;
+        }
+
+        p{
+            font-size: $xxsm;
+        }
+    }
+    
+    /* project*/
+    .container-proyect{
+        height: 80vh;
+        padding-top: 24px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1{
+            font-size: $xlg; 
+        }
+
+        p{
+            font-size: $xsm;
+        }
+    }
+   
+    .main-text-proyect{
+        width: 100vw;
+        padding-left: 8px;
+
+        p{
+            width: 100%;
+            font-size: $sm;
+            padding-bottom: 16px;
+            padding-right: 4px;  
+        }
+    }
+  
+    .small-text-proyect{
+        width: 100%;
+        padding-bottom: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-proyect{
+        @include flex(column,space-between ,flex-start);
+
+        height: auto;
+        width: 100vw;
+        padding-top: 20px;
+        padding-bottom: 4px;
+        padding-left: 8px;
+        padding-right: 4px;
+        width: 100%;
+    }
+
+    .gallery{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-gap: 16px;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .gallery-item{
+       width: 100%; 
+       height: 100%;
+
+       img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+    }
+    
+    .gallery-item-1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+
+    .gallery-item-2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .gallery-item-3 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .gallery-item-5 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .extra-padding{
+        padding-top: 48px;
+    }
+    
+    .gallery-campus{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    
+}

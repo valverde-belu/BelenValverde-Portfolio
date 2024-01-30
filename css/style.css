@@ -1,3 +1,4 @@
+/* Base*/
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
 *{
     font-family: 'Space Grotesk', sans-serif;
@@ -43,6 +44,10 @@ p{
 .text-uppercase{
     text-transform: uppercase;
 }
+
+
+
+/*nav*/
 .menu{
     list-style: none;
     text-decoration: none;
@@ -68,6 +73,13 @@ p{
     text-decoration: none;
     font-size: 2em;
 }
+.navbar ul li a{
+    color: blue;  
+}
+
+
+
+/*list*/
 .container-proyect-list{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -77,6 +89,8 @@ p{
     align-items: flex-start;
     justify-content: space-between;
 }
+
+/*projects*/
 header img{
    width: 100%; 
 }
@@ -84,6 +98,7 @@ main img{
     width: 25%;
 }
 
+/* base*/
 .footer{
     font-size: 2em;
     position: fixed;
@@ -99,6 +114,8 @@ main img{
     
 }
 
+
+/* list*/
 .item-proyect-list{
     width: 100%;
     display: flex;
@@ -120,6 +137,9 @@ main img{
 .item-proyect-list h2{
     font-weight: bold;
 }
+
+
+/*index*/
 .section-index{
     text-align: center;
     display: flex;
@@ -131,6 +151,9 @@ main img{
     transform: translateX(-50%) translateY(-60%);
     
 }
+
+
+/* Bio*/
 .container-bio{
     padding-top: 0px;
     padding-bottom: 0px;
@@ -159,6 +182,8 @@ main img{
     padding-bottom: 24px;
 }
 
+
+/* projects*/
 .container-proyect{
     height: 80vh;
     padding-top: 32px;
@@ -261,6 +286,7 @@ grid-row-end: 2;
     padding-right: 4px;
 }
 
+/*nav*/
 .menu ul li a:active{
     color: white;
     background-color: blue;
@@ -271,6 +297,7 @@ grid-row-end: 2;
     background-color: blue;  
 }
 
+/* Base*/
 a:active{
     color: white;
     background-color: blue;
@@ -279,24 +306,30 @@ a:hover{
     color: white;
     background-color: blue;
 }
+
+/*list*/
 .item-proyect-list h2:hover{
     color: white;
     background-color: blue;
 }
 
 @media (width< 990px){
+    /* bio*/
     .main-text p{
         padding-right: 64px;
     }
+    /*Projects*/
     .main-text-proyect p{
         padding-right: 64px;
     }
 }
 
 @media (width < 800px){
+    /*nav*/
     .menu ul li a{
         font-size: 1em;
     }
+    /* Base*/
     h1{
         font-size: 3em;
     }
@@ -318,7 +351,8 @@ a:hover{
     .footer ul li a {
         display: none;
     }
-    
+
+    /*bio*/
     .container-bio{
         padding-top: 0px;
         padding-bottom: 0px;
@@ -357,6 +391,7 @@ a:hover{
         padding-right: 4px;
         padding-bottom: 16px;
     }
+    /* list*/
     .item-proyect-list{
         width: 100%;
         display: flex;
@@ -382,6 +417,8 @@ a:hover{
     .item-proyect-list p{
         font-size: 0.8em;
     }
+
+    /* pro*/
     .container-proyect{
         height: 80vh;
         padding-top: 24px;
@@ -489,6 +526,4 @@ a:hover{
     }
     
 }
-.navbar ul li a{
-    color: blue;  
-}
+
