@@ -1,11 +1,10 @@
-.section-index{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-60%);
-    
+.index-page {
+    @include custom-cursor($cursorIndex);
+  }
+
+.section-index {
+    position: relative;
+    z-index: 2; /* Ensures the text is above the carousel */
+    text-align: center; /* Centers the text horizontally */
 }
+

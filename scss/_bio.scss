@@ -1,3 +1,7 @@
+.bio-section {
+    @include custom-cursor($cursorBio);
+  }
+
 .container-bio{
     @include flex(row,space-between ,flex-start );
 

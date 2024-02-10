@@ -1,3 +1,7 @@
+.list-page {
+    @include custom-cursor($cursorList);
+  }
+
 .container-proyect-list{
     @include flex(column,space-between ,flex-start);
 
