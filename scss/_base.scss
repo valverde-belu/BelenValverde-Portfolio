@@ -19,14 +19,6 @@ $xlg: 3em;
 $xxlg: 4em;
 $xxxlg: 5em;
 
-$cursorIndex: url(../img/Carita-1.svg) 0 0, auto;
-$cursorBio: url(../img/Carita-2.svg) 0 0, auto;
-$cursorList: url(../img/Carita-3.svg) 0 0, auto;
-$cursorProyect: url(../img/Carita-4.svg) 0 0. auto;
-
-@mixin custom-cursor($cursor) {
-    cursor: $cursor
-  }
 
 @mixin flex($direc,$justy,$align){
     display: flex;
