@@ -1,7 +1,5 @@
-
-
 .container-proyect-list{
-    @include flex(column,space-between ,flex-start);
+    @include flex(row,space-between ,flex-start);
 
     padding-top: 0px;
     padding-bottom: 0px;
@@ -9,7 +7,7 @@
 }
 
 .item-proyect-list{
-    @include flex(row,space-between ,center);
+    @include flex(column,space-between,flex-start);
 
     width: 100%;
     padding-top: 16px;
@@ -21,10 +19,11 @@
     border-color: $mainColor;
 
     img{
-        width: 4%;  
+        width: 4vw;  
     }
 
     h2{
+        width: 50vw;
         font-weight: bold;
         &:hover{
             color: $secondaryColor;
@@ -32,4 +31,12 @@
         }
     }
 
+    p{
+        padding-left: 50%;
+        width: 46vw;
+    }
+}
+
+.project-title{
+    width: 50vw;
 }
