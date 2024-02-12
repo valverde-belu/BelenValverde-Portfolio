@@ -1,14 +1,12 @@
 .container-proyect-list{
-    @include flex(row,space-between ,flex-start);
-
+    @include flex(column,space-between,flex-start);
     padding-top: 0px;
     padding-bottom: 0px;
     height: 100vh;
 }
 
 .item-proyect-list{
-    @include flex(column,space-between,flex-start);
-
+    @include flex(row,space-between,center);
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -19,24 +17,15 @@
     border-color: $mainColor;
 
     img{
-        width: 4vw;  
+        width: 4%;  
     }
 
     h2{
-        width: 50vw;
+        width: auto;
         font-weight: bold;
         &:hover{
             color: $secondaryColor;
             background-color: $mainColor;
         }
     }
-
-    p{
-        padding-left: 50%;
-        width: 46vw;
-    }
-}
-
-.project-title{
-    width: 50vw;
 }

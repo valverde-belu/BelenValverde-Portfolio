@@ -34,7 +34,6 @@ main {
 .main-text-proyect{
     width: 70vw;
     padding-left: 16px;
-
     p{
     width: 70vw;
     font-size: $lg;
@@ -52,7 +51,6 @@ main {
 
 .text-proyect{
     @include flex(row,space-between ,flex-start );
-
     height: auto;
     padding-top: 40px;
     padding-bottom: 4px;

@@ -1,10 +1,9 @@
 .container-bio{
     @include flex(row,space-between ,flex-start );
-
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 16px;
-    width: 100vw;
+    width: 98vw;
 
     h3{
         padding-bottom: $xsm;  

@@ -1,15 +1,14 @@
-//font
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
-//vars
+
 $mainFont:'Space Grotesk', sans-serif;
-//weights
+
 $light:300;
 $regular:400;
-$bold:600;
-//colors
+$bold:700;
+
 $mainColor: blue;
 $secondaryColor: white;
-//sizes
+
 $xxsm: 0.8em;
 $xsm: 1em;
 $sm:1.4em; 
@@ -27,47 +26,34 @@ $xxxlg: 5em;
     align-items: $align;
 }
 
-h1,
-h2,
-h3,
-p,
-nav,
-ul,
-li,
-a{
+*{
     font-family: $mainFont;
-    color: $mainColor;
-    list-style: none;
-    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
 }
 
-h1,
-h2,
-h3{
+h1, h2, h3, p, nav, ul, li, a {
+    color: $mainColor !important;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+h1, h2, h3{
     font-weight: $bold;
 }
 
-*{
-    font-family: 'Space Grotesk', sans-serif;
-    box-sizing: border-box;
-    
-}
 h1{
     font-size: $xxlg;
-    text-decoration: none;
 }
 h2{
     font-size: $lg;
-    text-decoration: none;
 }
 h3{
     font-size: $md;
-    text-decoration: none;
 }
-nav,
-ul,
-li,
-a{
+nav ul li a {
     color: $mainColor;
     font-size: $lg;
     text-transform: uppercase; 
@@ -89,14 +75,12 @@ p{
 }
 
 .footer{
-
-   @include flex(row,space-between ,last baseline);
-
     font-size: $lg;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    @include flex(row,space-between,baseline);
     padding-bottom: 4px;
     padding-right: 16px;
     }

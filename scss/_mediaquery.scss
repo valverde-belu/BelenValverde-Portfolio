@@ -1,13 +1,11 @@
-@media (width< 990px){
+@media (max-width:990px){
     
-    /* bio*/
     .main-text{
         p{
             padding-right: 64px;
         }
     }
     
-    /*Projects*/
     .main-text-proyect {
         p{
             padding-right: 64px;
@@ -16,9 +14,8 @@
     
 }
 
-@media (width < 800px){
+@media (max-width: 800px){
     
-    /*nav*/
     .menu{
         ul,
         li,
@@ -27,13 +24,11 @@
         }
     } 
     
-    /* Base*/
     h1{
         font-size: $xlg;
     }
     .footer{
-        @include flex(column,baseline ,center);
-
+        @include flex(column,center,baseline);
         font-size: $xsm;
         position: fixed;
         bottom: 0;
@@ -52,11 +47,8 @@
         }
     }
     
-
-    /*bio*/
     .container-bio{
         @include flex(column,space-between ,flex-start );
-
         padding-top: 0px;
         padding-bottom: 0px;
         padding-left: 4px;
@@ -97,10 +89,8 @@
     
     }
     
-    /* list*/
     .item-proyect-list{
         @include flex(column,space-between ,baseline);
-
         width: 100%;
         padding-top: 16px;
         padding-bottom: 16px;
@@ -124,7 +114,6 @@
         }
     }
     
-    /* project*/
     .container-proyect{
         height: 80vh;
         padding-top: 24px;
@@ -166,7 +155,6 @@
 
     .text-proyect{
         @include flex(column,space-between ,flex-start);
-
         height: auto;
         width: 100vw;
         padding-top: 20px;
