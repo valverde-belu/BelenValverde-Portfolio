@@ -21,11 +21,22 @@
     }
 
     h2{
-        width: auto;
+        flex-grow: 1;
         font-weight: bold;
         &:hover{
-            color: $secondaryColor;
+            color: $secondaryColor !important;
             background-color: $mainColor;
         }
     }
+
+    p{
+        width: auto;
+        flex-grow: 2;
+    }
+    
+}
+
+.project-title{
+    width: 40vw; 
+
 }

@@ -34,7 +34,7 @@ $xxxlg: 5em;
 }
 
 h1, h2, h3, p, nav, ul, li, a {
-    color: $mainColor !important;
+    color: $mainColor;
     list-style: none;
     text-decoration: none;
     
@@ -54,7 +54,7 @@ h3{
     font-size: $md;
 }
 nav ul li a {
-    color: $mainColor;
+    color: $mainColor !important;
     font-size: $lg;
     text-transform: uppercase; 
     text-decoration: none;

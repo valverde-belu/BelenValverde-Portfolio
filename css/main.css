@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, p, nav, ul, li, a {
-  color: blue !important;
+  color: blue;
   list-style: none;
   text-decoration: none;
 }
@@ -29,7 +29,7 @@ h3 {
 }
 
 nav ul li a {
-  color: blue;
+  color: blue !important;
   font-size: 2em;
   text-transform: uppercase;
   text-decoration: none;
@@ -168,12 +168,20 @@ a:hover {
   width: 4%;
 }
 .item-proyect-list h2 {
-  width: auto;
+  flex-grow: 1;
   font-weight: bold;
 }
 .item-proyect-list h2:hover {
-  color: white;
+  color: white !important;
   background-color: blue;
+}
+.item-proyect-list p {
+  width: auto;
+  flex-grow: 2;
+}
+
+.project-title {
+  width: 40vw;
 }
 
 header img {
