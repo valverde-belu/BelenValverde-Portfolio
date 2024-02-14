@@ -354,8 +354,8 @@ main img {
   .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
     font-size: 1em;
     position: fixed;
     bottom: 0;
@@ -365,6 +365,7 @@ main img {
   }
   .footer h2 {
     font-size: 1.5em;
+    margin-right: 0;
   }
   .footer ul,
   .footer li,
