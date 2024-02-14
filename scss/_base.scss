@@ -78,12 +78,16 @@ p{
     font-size: $lg;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    @include flex(row,space-between,baseline);
-    padding-bottom: 4px;
-    padding-right: 16px;
+    left: -16px;
+    width: 100vw;
+    @include flex(row,space-between,end);
+    
+
+    h2{
+        margin-right: 16px;
     }
+   
+ }
 
 a{
     &:active{
