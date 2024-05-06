@@ -549,8 +549,8 @@ main img {
     padding-left: 4px;
     padding-right: 4px;
     border: 4px;
-    border-bottom: 2px solid blue;
-    border-color: blue;
+    border-bottom: 2px solid red;
+    border-color: red;
   }
   .item-proyect-list img {
     display: none;
