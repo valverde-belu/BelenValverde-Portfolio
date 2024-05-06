@@ -6,13 +6,18 @@
     position: sticky;
     top: 0;
     left: 0;
+    right: 0 !important;
     width: 100%;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    
     
 
     ul{
         list-style: none;
         text-decoration: none;
         @include flex(row,space-between ,flex-start);
+    
 
     }
 
@@ -20,6 +25,7 @@
         font-size: $lg;
         list-style: none;
         text-decoration: none;
+        padding-left: 0.001em;
         &:hover{
             color: $secondaryColor !important;
             background-color: $mainColor;
@@ -39,3 +45,5 @@
     }
 
 }
+
+

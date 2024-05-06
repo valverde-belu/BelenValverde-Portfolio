@@ -15,8 +15,8 @@ main {
     height: 80vh;
     padding-top: 32px;
     padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,32 +31,45 @@ main {
 }
 
 
+
 .main-text-proyect{
     width: 70vw;
     padding-left: 16px;
     p{
     width: 70vw;
     font-size: $lg;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
     padding-right: 32px; 
     }
 }
+
 
 .small-text-proyect{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 8px
 }
 
 .text-proyect{
     @include flex(row,space-between ,flex-start );
     height: auto;
-    padding-top: 40px;
-    padding-bottom: 4px;
+    padding-top: 56px;
+    padding-bottom: 24px;
     width: 100%;
+    padding-right: 24px;
     
 }
+
+.titulares-proyectos {
+
+    padding-left: 1em;
+    
+}
+
+
+
 
 .gallery{
     width: 100%;
@@ -66,8 +79,8 @@ main {
     grid-gap: 16px;
     padding-top: 16px;
     padding-bottom: 32px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .gallery-item{
    width: 100%; 
@@ -120,6 +133,93 @@ grid-row-end: 2;
     grid-gap: 16px;
     padding-top: 16px;
     padding-bottom: 32px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
+
+.imagen-afiche{
+    img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
+    width: 60vw;
+    }
+
+    p { 
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 58vw; 
+    }
+}
+
+.imagen-afiche-bvc{
+    img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5em;
+    width: 60vw;
+    }
+
+    p { 
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 58vw; 
+    padding-bottom: 2.5em;
+    }
+}
+
+.ilustracion-texto{
+    @include flex(column,flex-start ,flex-start );
+    height: auto;
+    padding-top: 2em;
+    padding-bottom: 24px;
+    width: 100%;
+    padding-right: 24px;
+
+    img{
+        margin-left: 1em;
+        padding-top: 2.5em;
+        width: 60vw;
+        }
+
+     p { 
+        margin-left: 1em;
+        width: 58vw; 
+        padding-bottom: 2.5em;
+        padding-top: 1em;
+      }
+}
+
+.ilustracion-texto-2{
+    @include flex(column,flex-end ,flex-end );
+    height: auto;
+    padding-top: 2em;
+    padding-bottom: 24px;
+    width: 100%;
+    padding-right: 24px;
+
+    img{
+        margin-left: 1em;
+        padding-top: 2.5em;
+        width: 60vw;
+        }
+
+     p { 
+        width: 60vw; 
+        padding-top: 1em;
+      }
+
+      h3{
+        width: 60vw; 
+        padding-top: 1em;
+      }
+}
+
+
+
+

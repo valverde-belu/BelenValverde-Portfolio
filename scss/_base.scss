@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
 
+
 $mainFont:'Space Grotesk', sans-serif;
+
 
 $light:300;
 $regular:400;
 $bold:700;
 
-$mainColor: blue;
+$mainColor: red;
 $secondaryColor: white;
 
 $xxsm: 0.8em;
@@ -79,13 +81,46 @@ p{
     font-size: $lg;
     position: fixed;
     bottom: 0;
+    margin-bottom: 0px;
     left: -16px;
     width: 100vw;
     @include flex(row,space-between,end);
     
     h2{
-        margin-right: 16px;
+        margin-right: 0px;
     }
+   
+ }
+
+ 
+.footer-proyectos{
+    font-size: $lg;
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    list-style: none;
+    text-decoration: none;
+    margin-left: -24px;
+    
+    ul{
+        list-style: none;
+        text-decoration: none;
+        @include flex(row,space-between ,center);
+    }
+
+    li a {
+        list-style: none;
+        text-decoration: none;
+        &:hover{
+            color: $secondaryColor !important;
+            background-color: $mainColor;
+        }
+        &:active{
+            color: $secondaryColor !important;
+            background-color: $mainColor;
+        }
+    }
+    
    
  }
 
